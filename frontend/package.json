@@ -1,0 +1,49 @@
+{
+  "name": "cetus-frontend",
+  "version": "1.2.1",
+  "description": "The frontend package for Cetus.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf public && rimraf dist && rimraf .parcel-cache && parcel build src/dashboard/index.html src/static/pages/*.html src/404.html --dist-dir public --no-source-maps --log-level verbose",
+    "dev": "rimraf dist && rimraf .parcel-cache && parcel src/dashboard/index.html src/static/pages/*.html src/404.html",
+    "check": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@stripe/stripe-js": "^1.8.0",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/swagger-ui-react": "^3.23.2",
+    "@types/yup": "^0.29.2",
+    "bulma": "^0.9.1",
+    "formik": "^2.1.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "typescript": "^3.8.3",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-transform-react-jsx": "^7.10.1",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/node": "^14.0.4",
+    "@types/react-router-dom": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "live-server": "^1.2.1",
+    "parcel": "^2.0.0-nightly.511",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.8"
+  }
+}

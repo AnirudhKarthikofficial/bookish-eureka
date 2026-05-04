@@ -1,0 +1,163 @@
+$effective-height: calc(100vh - #{$navbar-height});
+
+.group-img {
+    height: 100%;
+    border-radius: 4px;
+    width: auto;
+}
+.group-info {
+    padding: 1em;
+}
+.user-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: $grey-lightest;
+    padding-left: 2.5px;
+    padding-top: 2.5px;
+    img {
+        height: 75px;
+        width: 75px;
+    }
+}
+.sidebar-container {
+  max-height: $effective-height;
+}
+.sidebar {
+    min-height: $effective-height;
+    background-color: $dark-background;
+    color: $dark-background-text;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+.ownertext {
+    margin-top: -1.25em
+}
+.indented-text {
+    padding-left: 1em;
+}
+.panel-nav {
+    background-color: #2d3942 !important;
+}
+.panel-right-column {
+    overflow-y: scroll;
+    height: calc(#{$effective-height} + 0.75rem);
+    margin: 0 !important;
+}
+
+.token-manager .box {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.token-manager .wrap {
+    word-wrap: break-word;
+    pointer-events: bounding-box;
+    height: 100%;
+}
+
+.token-manager .clickable {
+    cursor: pointer;
+}
+.add-key-form {
+    padding-bottom: 0.5rem;
+}
+.greeting {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.integrations-menu {
+    .fa-discord {
+        color: #7289DA;
+    }
+
+    .fa-robot {
+        color: #94D1BE;
+    }
+    .fa-shield-alt {
+        color: #A29C9B;
+    }
+
+    .integration-button-box {
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .integration-button-box.is-inactive {
+        opacity: 0.4;
+    }
+    .integration-button-box.is-inactive:hover {
+        opacity: 1;
+    }
+    .last-para {
+        margin-bottom: 1rem;
+    }
+
+
+}
+.modal-desc {
+    white-space: pre-wrap;
+}
+.group-defender {
+    margin-top: 1vh;
+    .title, .notification {
+        margin-bottom: 0.5vh;
+    }
+    .desc {
+        margin-bottom: 1vh;
+    }
+    .config-group {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    form {
+        hr {
+            margin-top: 0;
+        }
+    }
+    .field {
+        padding-bottom: 0.3rem;
+    }
+    .bot-viewer {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 0.3rem;
+        img {
+            border-radius: 4px;
+        }
+    }
+
+}
+.sdk-docs {
+    .sdk-title {
+        border-bottom: 1px solid $grey-light;
+        margin-bottom: 0.25rem;
+        cursor: pointer;
+        padding-top: 0.5rem;
+    }
+    pre.code {
+        border-left: 2px solid $info;
+    }
+    .schema-block {
+        padding:0.5rem 0 0.5rem 1rem;
+        background-color: rgba(237, 237, 237, 0.5);
+        border-radius: 2px;
+        border-left: 2px solid $primary;
+        span.line {
+            display: block;
+            padding-bottom: 2px;
+        }
+        .schema-name {
+            border-bottom: 1px solid $grey-lighter;
+        }
+        .schema-block {
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+.add-admin-info {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 0.5rem;
+}

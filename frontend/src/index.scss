@@ -1,0 +1,32 @@
+@import "bulma/bulma";
+@import "./shared/assets/switch.sass";
+
+.discord-login-button {
+  background-color: $blurple;
+  color: $white;
+  display: inline-block !important;
+  padding: 0;
+
+  &:hover, &:focus, &:active {
+    color: $white;
+  }
+
+  > img {
+    height: 40px;
+    vertical-align: middle;
+  }
+}
+
+// Bulma "extensions"
+.has-background-transparent {
+  background-color: transparent !important;
+}
+
+.button.is-blurple {
+  background-color: $blurple;
+  color: #fff;
+}
+
+.has-text-gold {
+  color: #daa520;
+}

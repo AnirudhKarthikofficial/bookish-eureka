@@ -1,0 +1,61 @@
+@import "bulma/sass/utilities/functions";
+@import "bulma/sass/utilities/derived-variables";
+
+$dark-background-other: #232C33;
+.hero {
+  background-color: $dark-background-index;
+}
+.hero-body {
+  padding-bottom: 0 !important;
+}
+
+.navbar .navbar-brand img {
+  min-height: 56px;
+}
+
+.demo {
+  border-radius: 5px;
+  box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
+}
+.image {
+  height: 100%;
+}
+.attention-text {
+  font-weight: 700;
+  line-height: 120%;
+}
+.section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+$offwhite: #f6f6f6;
+.section.dark {
+  background-color: $offwhite
+}
+.underline-emphasis {
+  border-bottom: 3px solid $danger;
+}
+#features {
+  .card {
+      img {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+        margin-top: 1rem;
+      }
+  }
+}
+.space-dark {
+  background-color: $dark-background-index;
+  color: #fff;
+}
+.flipped {
+  transform: rotate(180deg);
+  display: block;
+}
+.spaced {
+  margin-top: 30vh;
+}
+.footer {
+  background-color: $dark-background-other;
+}
